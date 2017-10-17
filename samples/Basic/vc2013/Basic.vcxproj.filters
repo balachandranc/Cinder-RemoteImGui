@@ -1,0 +1,148 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{14B15E68-42EB-4C36-BF2F-EB654969BF86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ImGui">
+      <UniqueIdentifier>{10A62D0A-5278-4D80-81F7-168950C11C3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ImGui\include">
+      <UniqueIdentifier>{E210D927-FF7F-4949-AF78-4698F267582A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ImGui\lib">
+      <UniqueIdentifier>{0015FE7B-AB54-445C-B3A8-1C9AD68BAE1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ImGui\lib\imgui">
+      <UniqueIdentifier>{F5A44B6C-0F1B-48C5-B70A-59B502A3A02B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\ImGui\src">
+      <UniqueIdentifier>{CD694374-3200-41FB-8139-CF5F610C09C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui">
+      <UniqueIdentifier>{E78A1B5F-B78E-4D3E-B78F-BBC419A4DC7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui\src">
+      <UniqueIdentifier>{D376BF89-0CC3-4984-9F50-54443FB36034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui\lib">
+      <UniqueIdentifier>{1368901B-33D8-4AB2-9E13-D791835588CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui\lib\lz4">
+      <UniqueIdentifier>{3F254657-A835-4931-A740-0025B30900C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui\lib\webby">
+      <UniqueIdentifier>{B90B712A-9D07-48D7-8C85-4CED1C4436FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-RemoteImGui\include">
+      <UniqueIdentifier>{D208DE76-33F5-438B-9103-93D797BDD83F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BasicApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BasicApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Cinder-ImGui\include\CinderImGui.h">
+      <Filter>Blocks\ImGui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Cinder-ImGui\lib\imgui\imconfig.h">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Cinder-ImGui\lib\imgui\imgui.h">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Cinder-ImGui\lib\imgui\imgui_internal.h">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\Cinder-ImGui\src\CinderImGui.cpp">
+      <Filter>Blocks\ImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Cinder-ImGui\lib\imgui\imgui.cpp">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Cinder-ImGui\lib\imgui\imgui_draw.cpp">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Cinder-ImGui\lib\imgui\imgui_demo.cpp">
+      <Filter>Blocks\ImGui\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\CinderRemoteImGui.cpp">
+      <Filter>Blocks\Cinder-RemoteImGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\lz4\lz4.c">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\lz4\lz4frame.c">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\lz4\lz4hc.c">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\lz4\xxhash.c">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\webby\webby.c">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\webby</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\include\CinderRemoteImGui.h">
+      <Filter>Blocks\Cinder-RemoteImGui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\imgui_remote.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\imgui_remote_webby.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\lz4\lz4.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\lz4\lz4frame.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\lz4\lz4frame_static.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\lz4\lz4hc.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\lz4\xxhash.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\webby\webby.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\webby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\webby\webby_unix.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\webby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\webby\webby_win32.h">
+      <Filter>Blocks\Cinder-RemoteImGui\lib\webby</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
