@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Cinder-RemoteImGui"
+	id="in.olelabs.remoteimgui"
+	author="Balachandran. C"
+	summary="Jordi Ros's Remote ImGui for Cinder"
+    license="MIT License"
+    git="https://github.com/balachandranc/Cinder-RemoteImGui.git"
+	>
+    <requires>ocornut.imgui</requires>
+	<sourcePattern>src/*.cpp</sourcePattern>
+    <sourcePattern>lib/lz4/*.c</sourcePattern>
+    <sourcePattern>lib/webby/*.c</sourcePattern>
+	<headerPattern>include/*.h</headerPattern>
+    <headerPattern>lib/*.h</headerPattern>
+    <headerPattern>lib/lz4/*.h</headerPattern>
+    <headerPattern>lib/webby/*.h</headerPattern>
+	<includePath>include</includePath>
+    <includePath>lib</includePath>
+</block>
+</cinder>
