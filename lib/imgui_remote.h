@@ -15,9 +15,12 @@
 #include "cinder/Channel.h"
 #include "CinderImGui.h"
 #include "cinder/ip/Flip.h"
+#include "cinder/app/KeyEvent.h"
 
 #define IMGUI_REMOTE_KEY_FRAME    60  // send keyframe every 30 frames
 #define IMGUI_REMOTE_INPUT_FRAMES 60 // input valid during 120 frames
+
+using ci::app::KeyEvent;
 
 namespace ImGui {
 
@@ -33,7 +36,7 @@ struct RemoteInput
     float	MouseWheelDelta;
     bool	KeyCtrl;
     bool	KeyShift;
-    bool	KeysDown[256];
+    bool	KeysDown[512];
 };
 
 //------------------
@@ -89,27 +92,27 @@ struct WebSocketServer : public IWebSocketServer
 	}
 	inline bool mapRemoteKey(int* remoteKey, bool isCtrlPressed)
     {
-        if(*remoteKey == 37)
-            *remoteKey = ImGuiKey_LeftArrow;
-        else if(*remoteKey == 40)
-            *remoteKey = ImGuiKey_DownArrow;
-        else if(*remoteKey == 38)
-            *remoteKey = ImGuiKey_UpArrow;
-        else if(*remoteKey == 39)
-            *remoteKey = ImGuiKey_RightArrow;
-        else if(*remoteKey == 46)
-            *remoteKey = ImGuiKey_Delete;
-        else if(*remoteKey == 9)
-            *remoteKey = ImGuiKey_Tab;
-        else if(*remoteKey == 8)
-            *remoteKey = ImGuiKey_Backspace;
-        else if(*remoteKey == 65 && isCtrlPressed)
+        if( *remoteKey == 37 )
+            *remoteKey = KeyEvent::KEY_LEFT;
+        else if( *remoteKey == 40 )
+            *remoteKey = KeyEvent::KEY_DOWN;
+        else if( *remoteKey == 38 )
+            *remoteKey = KeyEvent::KEY_UP;
+        else if( *remoteKey == 39 )
+            *remoteKey = KeyEvent::KEY_RIGHT;
+        else if( *remoteKey == 46 )
+            *remoteKey = KeyEvent::KEY_DELETE;
+        else if( *remoteKey == 9 )
+            *remoteKey = KeyEvent::KEY_TAB;
+        else if( *remoteKey == 8 )
+            *remoteKey = KeyEvent::KEY_BACKSPACE;
+        else if( *remoteKey == 65 && isCtrlPressed )
             *remoteKey = 'a';
-        else if(*remoteKey == 67 && isCtrlPressed)
+        else if( *remoteKey == 67 && isCtrlPressed )
             *remoteKey = 'c';
-        else if(*remoteKey == 86 && isCtrlPressed)
+        else if( *remoteKey == 86 && isCtrlPressed )
             *remoteKey = 'v';
-        else if(*remoteKey == 88 && isCtrlPressed)
+        else if( *remoteKey == 88 && isCtrlPressed )
             *remoteKey = 'x';
         else
             return true;
@@ -390,7 +393,7 @@ bool RemoteGetInput(RemoteInput & input)
             res = true;
 		}
 	}
-    memset(GServer.Input.KeysDown, 0, 256*sizeof(bool));
+    memset(GServer.Input.KeysDown, 0, 512*sizeof(bool));
     GServer.Input.KeyCtrl = false;
     GServer.Input.KeyShift = false;
     GServer.Input.MouseWheelDelta = 0;

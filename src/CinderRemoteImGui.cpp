@@ -49,7 +49,7 @@ void update()
     ImGui::RemoteInput input;
     if( ImGui::RemoteGetInput( input ) ) {
         ImGuiIO& io = ImGui::GetIO();
-        for( int i = 0; i < 256; i++ ) {
+        for( int i = 0; i < 512; i++ ) {
             io.KeysDown[ i ] = input.KeysDown[ i ];
         }
         io.KeyCtrl = input.KeyCtrl;
